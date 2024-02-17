@@ -1,10 +1,12 @@
+
 from flask import Flask, jsonify 
 from flask_cors import CORS
 import cohere
+from db import get_database
 
 co = cohere.Client('QwHQXqOQgLg0Sjv9aUKt5wVBVazIC6KqWlGnd2yw')
 
-message = "what is this formula in latex: \sqrt{\sin ^2\left(-1\right)}\le \:1-\sin \left(x\right)"
+message = "Expand on the topic Basketball"
 response = co.chat(
   model='command-nightly',
   message=message,
@@ -17,14 +19,17 @@ CORS(app)
 
 
 
+#get MDB cluster
+dbname = get_database()
+collection_name = dbname["info"]
+
+new_info = {"header": "Another test"}
+collection_name.insert_one("new_info")
 
 
-
-
-
-
-
-
+@app.route('/')
+def home():
+  return 'test'
 
 @app.route("/api/home", methods=["GET"])
 def return_home():

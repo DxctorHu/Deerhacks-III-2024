@@ -19,7 +19,6 @@ function page() {
     })
 
   }, [])
-    const out = <Latex>{output}</Latex>
 
   
   return (
@@ -28,7 +27,6 @@ function page() {
      <div>{categories.map((category,index) => (
         <div key={index}>{category}</div>
       ))}</div> 
-      <div>{out}</div>
       <div>{<Latex displayMode={true}>{'$\sqrt{\sin ^2\left(-1\right)}\le \:1-\sin \left(x\right)$'}</Latex>}</div>
     </div>
   )
