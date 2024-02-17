@@ -1,0 +1,62 @@
+body {
+  background-color: #513520;
+  font-family: 'Koh Santepheap', sans-serif;
+  font-size: 2.2vw;
+  margin: 5%;
+  display: flex;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFFEFE;
+  margin-bottom: 1%;
+}
+
+
+#small {
+  font-size: 1.3vh;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 35%;
+  margin-right: 5%;
+}
+
+button {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  padding: 1em 3em; /* Top and Bottom, Left and Right padding */
+  border-radius: 2em; /* Fully rounded corners */
+  font-size: 1em;
+  font-family: 'Koh Santepheap', sans-serif;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  cursor: pointer; /* Cursor changes to a hand icon when hovered */
+}
+
+.image-container {
+  width: 65%;
+  text-align: center;
+  display: flex;
+  aspect-ratio: 1.2/1;
+} */
+
+.img {
+  max-width: 100%;
+
+} 
+
+
+p {
+  color: #FFFFFF;
+}
+
+.opacity {
+  opacity: 0.82;
+}
