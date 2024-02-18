@@ -13,16 +13,17 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        koh: ["Koh Santepheap"]
+        martel: ["Martel Sans"]
 
       },
       fontSize:{
         'lg': '35px',
-        'xl': '70px'
+        'xl': '70px',
       },
       colors: {
-        'brown-1': '#513520'
-
+        'brown-1': '#513520',
+        'brown-2': '#956542',
+        'brown-3': '#C19A6b'
       }
 
     },

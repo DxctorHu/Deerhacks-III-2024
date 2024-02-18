@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
 import './styles.modules.css';
@@ -11,25 +10,35 @@ import './styles.modules.css';
 
 </Head>
 
-export default function Page(){
+export default function Page() {
   return (
     <div className="flex text-white bg-brown-1">
-    {/* Text */}
-    <div className=" font-koh flex flex-col justify-center w-1/2 p-8 text-center" >
-      <h1 className="font-koh text-xl font-bold mb-6">Get the gist of anything in seconds</h1>
-      <p className="font-koh text-lg opacity-75 mb-6">Upload a document and get a breakdown of all the important concepts you need to know</p>
-      <Link href="/upload"><button className="py-4 px-12 text-lg bg-black text-white rounded-full cursor-pointer">  Start Here </button> </Link>
-      <p className="text-sm mt-6">Supported file types: PDF</p>
+      {/* Text */}
+      <div className="font-martel flex flex-col justify-center w-1/3 left-align m-[5%]">
+        <h1 className="font-martel text-xl font-bold mb-6">Get the <span className='italic'>Gist</span> of anything in <span className='text-yellow-300'>seconds</span></h1>
+        <p className="font-martel text-lg text-white opacity-75 mb-6">
+          Upload a document and get a breakdown of all the important concepts you need to know
+        </p>
+        <Link href="/upload">
+          <button className="py-4 px-15 text-lg bg-brown-3 text-white rounded-3 hover:opacity-70 cursor-pointer">
+            Start Here
+          </button>
+        </Link>
+        <p className="text-sm mt-6">Supported file types: PDF</p>
+      </div>
+      {/* Image */}
+      <div className="flex w-2/3 items-center justify-center m-[5%]">
+        <img
+          className="object-cover h-full w-full" // This will cover the entire area of the div
+          src="https://i.imgur.com/eLFXYK3.png"
+          alt="darkAcademicTextbook"
+        />
+      </div>
     </div>
-    {/* Image */}
-    <div className="w-1/2">
-      <Image src='/darkAcademicTextbook.png' width={2184} height={1224} alt="darkAcademicTextbook" layout = "responsive" />
-    </div>
-  </div>
+  )
+}
   
 
 
-  );
-}
 
 
