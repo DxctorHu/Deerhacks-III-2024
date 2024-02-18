@@ -11,7 +11,8 @@ export default function DropZone(){
     const formData = new FormData();
 
     formData.append('file',file)
-    fetch('http://127.0.0.1:8080/upload', {
+    fetch('http://127.0.0.1:8080/upload', { 
+      mode: 'no-cors',
       method: 'POST',
       body: formData
   })
