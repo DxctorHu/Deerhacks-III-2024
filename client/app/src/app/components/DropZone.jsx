@@ -19,6 +19,11 @@ export default function DropZone(){
   .then(response => response.json())
   .then(data => {
     console.log("uploaded:", data)
+    localStorage.setItem('dates',data.dates)
+    localStorage.setItem('examples',data.examples)
+    localStorage.setItem('definitions',data.defintions)
+    localStorage.setItem('summary',data.summary)
+
     router.push('/navigation')
 
   })

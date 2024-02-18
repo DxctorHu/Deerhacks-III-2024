@@ -34,8 +34,8 @@ def upload_file():
   dates, definitions, examples, summary = gist(file_path)
   
   res = jsonify({
-    'date': dates,
-    'definition': definitions,
+    'dates': dates,
+    'definitions': definitions,
     'examples': examples,
     'summary': summary
   })
